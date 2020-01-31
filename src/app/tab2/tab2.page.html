@@ -6,4 +6,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <div class="card mt-4">
+    <h4 class="card-header">You're logged in with Angular 8 & JWT!!</h4>
+    <div class="card-body">
+      <h6>Users from secure api end point</h6>
+      <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+      <ul *ngIf="gpsList">
+        <li *ngFor="let gps of gpsList.data.list">{{gps.nome}}</li>
+      </ul>
+    </div>
+  </div>
+</ion-content>

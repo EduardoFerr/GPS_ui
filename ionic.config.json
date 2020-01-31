@@ -1,5 +1,7 @@
 {
   "name": "ui-gps",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
